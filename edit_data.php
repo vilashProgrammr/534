@@ -13,7 +13,7 @@ if(isset($_POST['btn-update']))
 	$last_name = $_POST['last_name'];
 	$city_name = $_POST['city_name'];
 
-	/* Uncomment the below block to enable edit functionality 	
+	// Uncomment the below block to enable edit functionality 	
 	$sql_query = "UPDATE users SET first_name='$first_name',last_name='$last_name',user_city='$city_name' WHERE user_id=".$_GET['edit_id'];
 
 	if(mysqli_query($conn,$sql_query))
@@ -33,7 +33,7 @@ if(isset($_POST['btn-update']))
 		</script>
 		<?php
 	}
-	*/
+	
 	
 }
 if(isset($_POST['btn-cancel']))
